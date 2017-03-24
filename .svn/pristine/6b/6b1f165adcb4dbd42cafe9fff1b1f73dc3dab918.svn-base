@@ -1,0 +1,19 @@
+package com.itheima.mobilesafe.activity;
+
+import com.itheima.mobilesafe.base.BaseActivity;
+
+public class AppProcessActivity extends BaseActivity {
+
+	@Override
+	protected void initView() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	protected void registListener() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

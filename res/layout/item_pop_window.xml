@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/local_popup_bg"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_start"
+        style="@style/pop_window_linearlayout" >
+
+        <ImageView
+            style="@style/pop_window_imagview"
+            android:src="@drawable/img1" />
+
+        <TextView
+            style="@style/pop_window_textview"
+            android:text="启动" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_uninstall"
+        style="@style/pop_window_linearlayout" >
+
+        <ImageView
+            style="@style/pop_window_imagview"
+            android:src="@drawable/img2" />
+
+        <TextView
+            style="@style/pop_window_textview"
+            android:text="卸载" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_share"
+        style="@style/pop_window_linearlayout" >
+
+        <ImageView
+            style="@style/pop_window_imagview"
+            android:src="@drawable/img3" />
+
+        <TextView
+            style="@style/pop_window_textview"
+            android:text="分享" />
+    </LinearLayout>
+
+</LinearLayout>

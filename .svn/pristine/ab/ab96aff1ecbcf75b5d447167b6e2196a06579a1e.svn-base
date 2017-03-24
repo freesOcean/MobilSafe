@@ -1,0 +1,35 @@
+package com.itheima.mobilesafe.utils;
+
+import android.content.Context;
+import android.os.StatFs;
+import android.text.format.Formatter;
+
+/**
+ * 获取手机某个目录的存储空间工具类
+ * @author ZXJM
+ * 2016年9月12日
+ */
+public class AppSpaceUtils {
+	
+	/**
+	 * 获取指定目录的可用空间
+	 */
+	public static String getAvaiSpace(Context context,String path){
+		StatFs sf = new StatFs(path);
+		long avaiCount = sf.getAvailableBlocks();
+		int blockSize = sf.getBlockSize();
+		String size = Formatter.formatFileSize(context, avaiCount*blockSize);
+		return size;
+	}
+	
+	/**
+	 * 获取指定目录的空间
+	 */
+	public static String getTotalSpace(Context context,String path){
+		StatFs sf = new StatFs(path);
+		long count = sf.getBlockCount();
+		int blockSize = sf.getBlockSize();
+		String size = Formatter.formatFileSize(context, count*blockSize);
+		return size;
+	}
+}
